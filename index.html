@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css"/>
+  <script src="./index.js"></script>
+  <title>IMC</title>
+</head>
+<body class="container">
+ 
+   <header class="header">
+    <h3 class="titulo">IMC<h4 class="titulomenor">índice de massa corporal</h4></h3>
+
+    <div class="buttons">
+      
+      <button class ="git" onclick="window.open('https://github.com/LeonardoRibeiro000', '_blank') " ><img src="./gihub-logo.jpg" class="image"></button>
+      
+      <button  class="linkedin" onclick="window.open('https://www.linkedin.com/in/leonardo-ribeiro-5206b9166', '_blank')"><img src="./linkedin-logo.jpg" class="image" > </button> 
+      
+      <button  class="wpp" onclick="window.open('https://api.whatsapp.com/send?phone=5585991599937&text=Olá,%20gostaria%20de%20contratar%20seus%20serviços!', '_blank')"><img src="./logo-wpp.jpg" class="image"/></button>
+      
+    </div>
+    </header>
+
+    <br/>
+    <div class="content">
+      O índice de massa corporal (IMC) é uma medida 
+      internacional usada para calcular se uma pessoa
+       está no peso ideal. Desenvolvido pelo polímata
+        Lambert Quételet no fim do século XIX, trata-se
+         de um método fácil e rápido para a avaliação 
+         do nível de gordura de cada pessoa, sendo, 
+         por isso, um preditor internacional de 
+         obesidade adotado pela Organização Mundial da Saúde (OMS)
+
+    </div>
+  </br>
+    <h3>Tabela informativa do IMC:</h3>
+      <table class="table">
+      <thead>
+        <tr>
+          <!--Titulo da tabela, valor a ser preenchido-->
+
+          <th>IMC</th>
+          <!--Linha da tabela, valor preenchido-->
+
+          <th>Situação</th>
+        </tr>
+      </thead>
+
+      <tbody >
+        <tr>
+          <td> Abaixo de 17 </td>
+          <td> Muito abaixo do peso</td>
+          
+        </tr>
+        <tr>
+          <td>Entre 17 e 18,49</td>
+          <td>Abaixo do peso</td>
+        </tr>
+        <tr>
+          <td>Entre 18,50 e 24,99 </td>
+          <td> Peso normal</td>
+          
+        </tr>
+        <tr>
+          <td>Entre 25 e 29,99 </td>
+          <td> Acima do peso</td>
+          
+        </tr>
+        <tr>
+          <td>Entre 30 e 34,99 </td>
+          <td> Obesidade I</td>
+          
+        </tr>
+        <tr>
+          <td>Entre 35 e 39,99 </td>
+          <td> Obesidade II (severa</td>
+          
+        </tr>
+        <tr>
+          <td>Acima de 40 </td>
+          <td> Obesidade III (mórbida)</td>
+          
+        </tr>
+      </tbody>
+    </table>
+    <br>
+   
+    <div><h3>Vamos Calcular seu IMC ?</h3> </div>
+    <div class="explicacao">
+      <p>O cálculo funciona da seguinte forma... imc = peso / (altura * altura).</p>
+      
+    </div>
+    <br>
+    <form class="formulario" id="some-form">
+      <label for="altura" class="label"><b>Altura:</b>  </label>
+      <br>
+      <input required class="input" id="altura" placeholder="1.65, 1.80 ...." type="text">
+      <br>
+      <br>
+      <label for="quilos" class="label"><b>Peso:</b></label>
+      <br>
+      <input required class="input" id="quilos" placeholder="kg..." type="text">
+      <br><br>
+      <button class="btn" onclick="CalcularIMC()">Calcular</button>
+      <br><br>
+      <div class="result" id="resultado">
+        
+      </div>
+        
+    </form>
+    
+
+
+
+  
+</body>
+</html>
